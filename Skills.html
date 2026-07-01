@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Karanveer's Garage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- nav bar -->
+
+<nav class="top-directory">
+
+    <a href="index.html">Home</a>
+    <a href="AboutMe.html">About Me</a>
+    <a href="Skills.html" class="active-bay">Skills</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Contact.html">Contact</a>
+
+</nav>
+<div class="garage-container">
+
+    <h1 class="page-title">Mystery Machine Bay</h1>
+
+    <!-- side arrows-->
+
+    <a href="AboutMe.html" class="bay-arrow left-arrow">
+        ◀
+    </a>
+    <a href="Projects.html" class="bay-arrow right-arrow">
+        ▶
+    </a>
+    
+    <!-- web dev file -->
+    <div class="object-wrapper"
+         style="top: 60%; left: 8%;">
+
+        <img
+            src="images/grayfile.png"
+            alt="Web Development File"
+            width="130">
+
+        <!-- invisible hitbox -->
+
+        <div class="hotspot"
+             data-modal-target="webDevModal">
+
+            <div class="hover-card">
+
+                <h3>Web Development</h3>
+
+                <p>
+                    HTML, CSS, JavaScript,
+                    GitHub and front-end
+                    web development.
+                </p>
+                <span>Click to open case file</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- debate file -->
+
+    <div class="object-wrapper"
+         style="top: 60%; right: 15%;">
+
+        <img
+            src="images/whitefile.png"
+            alt="Debate File"
+            width="130">
+        <div class="hotspot"
+             data-modal-target="debateSkillModal">
+
+            <div class="hover-card">
+
+                <h3>Speech & Debate</h3>
+
+                <p>
+                    Public speaking,
+                    research,
+                    communication,
+                    argumentation.
+                </p>
+
+                <span>Click to open case file</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- mysterymachine -->
+
+    <img src="images/MysteryMachine.png"
+         alt="Mystery Machine"
+         class="mystery-machine">
+</div>
+
+<!-- web dev modal -->
+
+<div class="modal" id="webDevModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Case File: Web Development</h2>
+        <p>
+            Status: Active Investigation
+        </p>
+        <img
+            src="images/coding.png"
+            alt="coding"
+            width="300">
+
+        <ul>
+            <li>HTML: basic structure and layout of websites</li>
+            <li>CSS: visual design and styling of websites</li>
+            <li>JavaScript: user interactivity and functionality</li>
+            <li>GitHub: repository management and version control</li>
+        </ul>
+    </div>
+</div>
+
+<!-- debate modal -->
+
+<div class="modal" id="debateSkillModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+
+        <h2>Case File: Speech & Debate</h2>
+        <p>
+            Status: Active Investigation
+        </p>
+        <img
+            src="https://gray-wfie-prod.gtv-cdn.com/resizer/v2/https%3A%2F%2Fdo0bihdskp9dy.cloudfront.net%2F08-07-2023%2Ft_2fc141fb28d142d4a60ca034273988d4_name_file_1280x720_2000_v3_1_.jpg?auth=d6f32362838f0875b5ed103ada29ab5ae8c2a0ea9d93288ea12d18b0dc7856a0&width=1920&height=1080&smart=true"
+            style="width:300px;height:auto;">
+
+        <ul>
+            <li>Public Speaking</li>
+            <li>Research</li>
+            <li>Critical Thinking</li>
+            <li>Argument Construction</li>
+            <li>Presentation Skills</li>
+            <li>Communication</li>
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
