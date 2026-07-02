@@ -25,7 +25,6 @@ modal.classList.remove("active");
 }
 });
 });
-
 const modals = document.querySelectorAll(".modal");
 modals.forEach(modal => {
 modal.addEventListener("click", (event) => {
@@ -37,15 +36,12 @@ modal.classList.remove("active");
 }
 
 // modal functions for opening and closing modals programmatically
-
 function openModal(modalId) {
 const modal = document.getElementById(modalId);
 if (modal) {
 modal.classList.add("active");
 }
-
 }
-
 function closeModal(modalId) {
 const modal = document.getElementById(modalId);
 if (modal) {
@@ -53,28 +49,31 @@ modal.classList.remove("active");
 }
 }
 
-// light and dark mode functions
-
+// light and dark modes
 function initializeTheme() {
 const savedTheme =
 localStorage.getItem("garageTheme");
 if (savedTheme === "light") {
 document.body.classList.add("light-mode");
+    }
 }
-}
-
-function toggleTheme() {
-document.body.classList.toggle("light-mode");
-const isLightMode =
-document.body.classList.contains("light-mode");
+function setLightMode() {
+document.body.classList.add("light-mode");
 localStorage.setItem(
 "garageTheme",
-isLightMode ? "light" : "dark"
+"light"
 );
 }
+function setDarkMode() {
 
+    document.body.classList.remove("light-mode");
+
+    localStorage.setItem(
+        "garageTheme",
+        "dark"
+    );
+}
 // transition betwen garage pages with fade out and in effects. 
-
 document.addEventListener("DOMContentLoaded", () => {
 const links = document.querySelectorAll("a");
 links.forEach(link => {
