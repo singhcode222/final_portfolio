@@ -14,6 +14,34 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* dark/light (dark mode is default) */
+
+:root{
+    --nav-bg:rgba(0,0,0,.85);
+    --nav-link-color:#ffffff;
+    --modal-overlay:rgba(0,0,0,.82);
+    --modal-content-bg:#ffffff;
+    --modal-content-color:#000000;
+    --title-color:#ffffff;
+}
+
+body.light-mode{
+    --nav-bg:rgba(255,255,255,0.9);
+    --nav-link-color:#111111;
+    --modal-overlay:rgba(255,255,255,0.85);
+    --modal-content-bg:#1a1a1a;
+    --modal-content-color:#f0f0f0;
+    --title-color:#111111;
+}
+
+body{
+    transition:background-color .25s ease;
+}
+
+body.light-mode{
+    background-color:#e8e8e8;
+}
+
 /* page */
 
 .garage-page{
