@@ -1,470 +1,241 @@
-<!-- TOP DIRECTORY -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecto-1 Bay | About Me</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<nav class="top-directory">
-
-    <a href="index.html">Home</a>
-    <a href="AboutMe.html" class="active-bay">About Me</a>
-    <a href="Skills.html">Skills</a>
-    <a href="Projects.html">Projects</a>
-    <a href="Contact.html">Contact</a>
-
+<nav class="directory-bar">
+ <a href="index.html">RB21</a>
+<a href="AboutMe.html">Ecto-1</a>
+<a href="Skills.html">Mystery Machine</a>
+<a href="Projects.html">DeLorean</a>
+<a href="Contact.html">SF2002</a>
 </nav>
 
-<div class="garage-container">
+<a href="index.html" class="nav-arrow arrow-left">◀</a>
+<a href="Skills.html" class="nav-arrow arrow-right">▶</a>
 
-    <h1 class="page-title">Ecto-1 Bay</h1>
+<div class="garage-page">
 
-    <!-- SIDE ARROWS -->
+<img src="images/Ecto1.png" class="garage-background" alt="Ecto-1">
+<h1 class="page-title">Ecto-1 Bay</h1>
 
-    <a href="Home.html" class="bay-arrow left-arrow">
-        ◀
-    </a>
-
-    <a href="Skills.html" class="bay-arrow right-arrow">
-        ▶
-    </a>
-
-    <!-- BOOMBOX -->
-
-    <div class="object-wrapper"
-         style="top:38.5%; left:10%;">
-
-        <img
-            src="images/radio.png"
-            alt="Music"
-            width="250">
-
-        <div class="hotspot"
-             data-modal-target="radioModal">
-
-            <div class="hover-card">
-
-                <h3>Music</h3>
-                <p>
-                    Oasis, The 1975, Radiohead, Arctic Monkeys, The Neighbourhood
-                </p>
-
-                <span>Click to explore music</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- soccerball -->
-
-    <div class="object-wrapper"
-         style="top:26%; left:85%;">
-
-        <img
-            src="images/ball.png"
-            alt="Soccer"
-            width="100">
-
-        <div class="hotspot"
-             data-modal-target="soccerModal">
-
-            <div class="hover-card">
-
-                <h3>Football</h3>
-
-                <p>
-                    Bayern Munich
-                    and Thomas Müller
-                </p>
-
-                <span>Click to learn more</span>
-
-            </div>
-        </div>
-
-    </div>
-
-    <!-- guitar -->
-
-    <div class="object-wrapper"
-         style="top:60%; left:76%;">
-
-        <img
-            src="images/guitar.png"
-            alt="Guitar"
-            width="200">
-        <div class="hotspot"
-             data-modal-target="guitarModal">
-
-            <div class="hover-card">
-
-                <h3>Guitar</h3>
-
-                <p>
-                    Acoustic and electric
-                    guitar practice
-                    since May
-                </p>
-
-                <span>Click to learn more</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- debate trophy -->
-
-    <div class="object-wrapper"
-         style="top:50%; right:10.5%;">
-
-        <img
-            src="images/debate.png"
-            alt="Debate"
-            width="60">
-
-        <div class="hotspot"
-             data-modal-target="debateModal">
-
-            <div class="hover-card">
-
-                <h3>Speech & Debate</h3>
-
-                <p>
-                    Public Forum,
-                    competitions,
-                    public speaking
-                </p>
-
-                <span>Click to learn more</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- ghost trap -->
-
-    <div class="object-wrapper"
-         style="top:85%; left:10%;">
-
-        <img
-            src="images/ghosttrap.png"
-            alt="Headshot"
-            width="150">
-
-        <div class="hotspot"
-             data-modal-target="factModal">
-
-            <div class="hover-card">
-
-                <h3>About Karanveer</h3>
-
-                <p>
-                    Headshot,
-                    interests,
-                    background
-                </p>
-
-                <span>Click to learn more</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- ecto1 -->
-
-    <img
-        src="images/ghostbusters.png"
-        alt="Ecto-1"
-        class="ghostbusters">
-
+<!-- boombbox-->
+<div class="hotspot-group" style="position:absolute; top:45%; left:10%;">
+<div class="hotspot" data-modal-target="radioModal"
+style="width:260px; height:120px;"></div>
+<div class="hover-card" style="top:-80px; left:260px;">
+<h3>Favorite Music</h3>
+<p>Explore my favorite bands and listen to songs directly through Spotify.</p>
+</div>
 </div>
 
-<!-- radio music one -->
+<!-- football-->
+<div class="hotspot-group" style="position:absolute; top:25%; left:87.5%;">
+<div class="hotspot" data-modal-target="soccerModal"
+style="width:80px; height:100px;"></div>
+
+<div class="hover-card" style="top:-60px; left:-220px;">
+<h3>Football</h3>
+<p>Favorite team, favorite player, and why I enjoy the sport.</p>
+</div>
+</div>
+
+<!-- guitar-->
+<div class="hotspot-group" style="position:absolute; top:55%; left:85%;">
+<div class="hotspot" data-modal-target="guitarModal"
+style="width:110px; height:260px;"></div>
+<div class="hover-card" style="top:-80px; left:-260px;">
+<h3>Guitar</h3>
+<p>Learn about my guitar journey and what songs I am currently learning.</p>
+</div>
+</div>
+
+<!-- debate trophy-->
+<div class="hotspot-group" style="position:absolute; top:37.5%; left:90%;">
+<div class="hotspot" data-modal-target="debateModal"
+style="width:90px; height:100px;"></div>
+<div class="hover-card" style="top:-70px; left:-240px;">
+<h3>Speech & Debate</h3>
+<p>Competitions, public speaking, research, and argumentation.</p>
+</div>
+</div>
+
+<!-- about me pic modal-->
+<div class="hotspot-group" style="position:absolute; top:85%; left:2%;">
+<div class="hotspot" data-modal-target="factModal"
+style="width:180px; height:120px;"></div>
+<div class="hover-card" style="top:-80px; left:200px;">
+<h3>About Me</h3>
+<p>Professional headshot, interests, hobbies, and personal background.</p>
+</div>
+</div>
+</div>
+
+<!-- modals poppup)-->
 
 <div class="modal" id="radioModal">
-
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>Radio: Some of my favorite bands and their songs</h2>
-
-         <h3>Oasis</h3>
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Oasis_Logo.svg/960px-Oasis_Logo.svg.png" alt="Oasis"
-        width="250px"
-        length="auto">
-
-        <div class="song-list">
-            <div class="song-item">
-                <span class="song-title">Whatever</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/5OWsea313ovaQoXvsgWq79?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Don't Look Back in Anger</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/12dU3vAh6AFoJkisorfoUl?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Some Might Say</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/1avW49i7WxqhimN7QNMPQj?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Take Me Away</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/0qkTP1X9QxYPHV75zutmxi?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">The Masterplan</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/0g1Y10aIIdJDkcSEuAq51k?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-        </div>
-      
-            <br>
-      
-        <h3>The 1975</h3>
-
-        <img src="https://i.scdn.co/image/ab6761610000e5eb0c6e752cbb1e6d1416970f5a" alt="1975"
-        width="150px"
-        length="auto">
-
-        <div class="song-list">
-            <div class="song-item">
-                <span class="song-title">Robbers</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/06cCziAHtDg6pcsidZHu03?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Chocolate</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/44Ljlpy44mHvLJxcYUvTK0?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Guys</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/0dGyrOsSR0TOAxY4UBojmV?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">An Encounter</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/3Uuf7UQy96o8rkyEXSmAmv?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">About You</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/3hEfpBHxgieRLz4t3kLNEg?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-        </div>
-
-        <br>
-
-<h3>Radiohead</h3>
-
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRP-BvewDG3iHbA92DflgF2xlmjqMCL8ddxWc91OPMnQ&s=10" alt="Radiohead"
-        width="150px"
-        length="auto">
-
-        <div class="song-list">
-            <div class="song-item">
-                <span class="song-title">Fake Plastic Trees</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/73CKjW3vsUXRpy3NnX4H7F?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Paranoid Android</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/6LgJvl0Xdtc73RJ1mmpotq?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">All I Need</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/5Qv2Nby1xTr9pQyjkrc94J?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">My Iron Lung</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/0jyikFM0Umv0KlnrOEKtTG?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Pyramid Song</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/6odVNrn820IkdNB1zC3kii?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-        </div>
-        <br> 
-
-        <h3>The Neighbourhood</h3>
-        <img src="https://i.redd.it/87joitmv20mc1.jpeg" alt="The Neighbourhood"
-        width="150px"
-        length="auto">
-        <div class="song-list">
-            <div class="song-item">
-                <span class="song-title">How</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/6mAuw7R6u4vlNneuBgnC8K?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Void</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/2wXioTynVwrEWYRv6R6vEj?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Honest</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/1xJ8RjDucztPOKB0ek95tf?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Prey</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/38kjFXYgPvtuXCPbHPMGte?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Sadderdaze</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/7sIYHDxjteT6RY29gAGzP2?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-        </div>
-
-        <br> 
- <h3>Arctic Monkeys</h3>
-        <img src="https://static.wikia.nocookie.net/logopedia/images/f/fb/Arctic-monkeys-logo-wallpaper.jpg" alt="Arctic Monkeys "
-        width="150px"
-        length="auto">
-
-        <div class="song-list">
-            <div class="song-item">
-                <span class="song-title">No. 1 Party Anthem</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/5TTGoX70AFrTvuEtqHK37S?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Mardy Bum</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/2fyIS6GXMgUcSv4oejx63f?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Riot Van</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/4wMR4fRKMTyUJG6VAsmccv?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">Secret Door </span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/4dtP86vkhzwNXCFpCtizce?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-            <div class="song-item">
-                <span class="song-title">A Certain Romance</span>
-                <iframe class="spotify-player" src="https://open.spotify.com/embed/track/0eDQj41kzBhMKQIkTt6OJR?utm_source=generator" allow="encrypted-media" loading="lazy"></iframe>
-            </div>
-
-    </div>
-
+<div class="modal-content">
+<button class="close-modal">&times;</button>
+<h2>Favorite Music</h2>
+<!-- oasis-->
+<h3>Oasis</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Oasis_Logo.svg/960px-Oasis_Logo.svg.png" width="250px">
+<div class="song-list">
+<div class="song-item">
+<span class="song-title">Whatever</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/5OWsea313ovaQoXvsgWq79?utm_source=generator" loading="lazy"></iframe>
 </div>
-
-<!-- football -->
-
+<div class="song-item">
+<span class="song-title">Don't Look Back in Anger</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/12dU3vAh6AFoJkisorfoUl?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item">
+<span class="song-title">Some Might Say</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/1avW49i7WxqhimN7QNMPQj?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item">
+<span class="song-title">Take Me Away</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/0qkTP1X9QxYPHV75zutmxi?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item">
+<span class="song-title">The Masterplan</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/0g1Y10aIIdJDkcSEuAq51k?utm_source=generator" loading="lazy"></iframe>
+</div>
+</div>
+<!-- 1975-->
+<h3>The 1975</h3>
+<img src="https://i.scdn.co/image/ab6761610000e5eb0c6e752cbb1e6d1416970f5a" width="150px">
+<div class="song-list">
+<div class="song-item"><span class="song-title">Robbers</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/06cCziAHtDg6pcsidZHu03?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span class="song-title">Chocolate</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/44Ljlpy44mHvLJxcYUvTK0?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span class="song-title">Guys</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/0dGyrOsSR0TOAxY4UBojmV?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span class="song-title">An Encounter</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/3Uuf7UQy96o8rkyEXSmAmv?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span class="song-title">About You</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/3hEfpBHxgieRLz4t3kLNEg?utm_source=generator" loading="lazy"></iframe>
+</div>
+</div>
+<!-- radiohead-->
+<h3>Radiohead</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRP-BvewDG3iHbA92DflgF2xlmjqMCL8ddxWc91OPMnQ&s=10" width="150px">
+<div class="song-list">
+<div class="song-item"><span>Fake Plastic Trees</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/73CKjW3vsUXRpy3NnX4H7F?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Paranoid Android</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/6LgJvl0Xdtc73RJ1mmpotq?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>All I Need</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/5Qv2Nby1xTr9pQyjkrc94J?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>My Iron Lung</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/0jyikFM0Umv0KlnrOEKtTG?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Pyramid Song</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/6odVNrn820IkdNB1zC3kii?utm_source=generator" loading="lazy"></iframe>
+</div>
+</div>
+<!-- nbhd-->
+<h3>The Neighbourhood</h3>
+<img src="https://i.redd.it/87joitmv20mc1.jpeg" width="150px">
+<div class="song-list">
+<div class="song-item"><span>How</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/6mAuw7R6u4vlNneuBgnC8K?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Void</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/2wXioTynVwrEWYRv6R6vEj?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Honest</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/1xJ8RjDucztPOKB0ek95tf?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Prey</span>
+ <iframe class="spotify-player" src="https://open.spotify.com/embed/track/38kjFXYgPvtuXCPbHPMGte?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Sadderdaze</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/7sIYHDxjteT6RY29gAGzP2?utm_source=generator" loading="lazy"></iframe>
+</div>
+</div>
+<!-- am-->
+<h3>Arctic Monkeys</h3>
+<img src="https://static.wikia.nocookie.net/logopedia/images/f/fb/Arctic-monkeys-logo-wallpaper.jpg" width="150px">
+<div class="song-list">
+<div class="song-item"><span>No. 1 Party Anthem</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/5TTGoX70AFrTvuEtqHK37S?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Mardy Bum</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/5TTGoX70AFrTvuEtqHK37S?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Riot Van</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/4wMR4fRKMTyUJG6VAsmccv?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>Secret Door</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/4dtP86vkhzwNXCFpCtizce?utm_source=generator" loading="lazy"></iframe>
+</div>
+<div class="song-item"><span>A Certain Romance</span>
+<iframe class="spotify-player" src="https://open.spotify.com/embed/track/0eDQj41kzBhMKQIkTt6OJR?utm_source=generator" loading="lazy"></iframe>
+</div>
+</div>
+</div>
+</div>
 <div class="modal" id="soccerModal">
     <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h2>Favorite Team</h2>
-    <p> Bayern Munich </p>
-    
-        <img src="images/BMFC.svg.png" alt="Bayern Munich Emblm "
-        width="150px"
-        length="auto">
-        <h2>Favorite Player</h2>
-<p> Thomas Müller </p>
-      <img src="images/thomasmuller.png" alt="Thomas Müller"
-        width="250px"
-        length="auto">
-    </div>
+<button class="close-modal">&times;</button>
+<h2>Favorite Team</h2>
+<p>Bayern Munich</p>
+<img src="images/BMFC.svg.png" width="200px" height="auto">
+ <h2>Favorite Player</h2>
+<p>Thomas Müller</p>
+        <img src="images/thomasmuller.png" width="200px" height="auto">
+ </div>
 </div>
-
-<!-- guitar accousitc -->
 
 <div class="modal" id="guitarModal">
     <div class="modal-content">
-        <span class="close-modal">&times;</span>
+        <button class="close-modal">&times;</button>
         <h2>Guitar</h2>
-
-        <p>
-            I've recently picked up guitar in May and I've been practicing both acoustic and electric guitar. 
-            However, faily incosistent progress has been made. Currently I am learning About You by the 1975.
-            The reason why I start playing guitar is it gives me something tangible that I can work on and improve on. 
-            I also listen to music everyday so being able to play of my favorite songs is a great feeling.
-        </p>
-
-    </div>
+<p> I've recently picked up guitar in May and I've been practicing both acoustic and electric guitar.
+Currently I am learning "About You" by The 1975 on the acoustic guitar. For electric guitar 
+ I've been working on "Mardy Bum" by Arctic Monkeys.
+Playing Guitar gives me something tangible to work on and improve every day, it also lets 
+be play some of my favorite songs and learn more about music theory. </p>
 </div>
-
-<!--  debate trophy -->
+</div>
 
 <div class="modal" id="debateModal">
-
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>Speech & Debate</h2>
-        <p>
-            I am a part of the Sig Speech and Debate team, I compete in the public forum category. Which is a 2v2 format. 
-            I've participated in competitions in Louisville, Indy, and Evansville. 
-        </p>
-    </div>
+<div class="modal-content">
+<button class="close-modal">&times;</button>
+<h2>Speech & Debate</h2>
+<p>
+I compete in Public Forum Debate and have participated in tournaments across Indiana and Kentucky. 
+I've learned a lot about public speaking, research, and argumentation through this activity. 
+</p>
 </div>
-<!-- Headshot -->
+</div>
 
 <div class="modal" id="factModal">
-
     <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>Professional Headshot</h2>
-
-            <img src="images/Me.png" alt="Professional Headshot"
-            width="250px"
-            height="auto">
-
-<div class="modal" id="factModal">
-
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
+        <button class="close-modal">&times;</button>
         <h2>About Me</h2>
-
-        <img
-            src="images/Me.png"
-            alt="Professional Headshot"
-            width="250">
+        <img src="images/Me.png" alt="Karanveer">
         <p>
-            My name is Karanveer Singh and I am a rising
-            senior at Signature School in Evansville,
-            Indiana. I am interested in business,
-            finance, technology, and entrepreneurship.
+            Rising senior at Signature School interested in finance, technology, and business.
 
-            Outside of academics, I enjoy Formula 1,
-            guitar, football, music, web development,
-            and speech & debate. This portfolio was
-            designed as an interactive garage where
-            each vehicle and object represents a
-            different part of my experiences,
-            projects, and interests.
         </p>
-
-    </div>
 </div>
-    </div>
 </div>
 
-<!-- directory modal -->
-
-<div class="modal" id="directoryModal">
-
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>Garage Directory</h2>
-
-        <div class="directory-links">
-
-            <a href="Home.html">
-                🏎 RB21 Bay
-            </a>
-
-            <a href="AboutMe.html">
-                👻 Ecto-1 Bay
-            </a>
-
-            <a href="Skills.html">
-                🚌 Mystery Machine Bay
-            </a>
-
-            <a href="Projects.html">
-                ⏰ DeLorean Bay
-            </a>
-
-            <a href="Contact.html">
-                🔴 SF2002 Bay
-            </a>
-        </div>
-    </div>
-</div>
 <script src="script.js"></script>
 </body>
 </html>

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Karanveer's Garage</title>
+    <title>RB21 Bay | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="top-directory">
+<!-- nav bar -->
+<nav class="directory-bar">
     <a href="index.html">RB21</a>
     <a href="AboutMe.html">Ecto-1</a>
     <a href="Skills.html">Mystery Machine</a>
@@ -16,72 +17,122 @@
     <a href="Contact.html">SF2002</a>
 </nav>
 
-<div class="garage-container">
-    <h1 class="page-title">RB21 Bay</h1>
+<!-- side arrows -->
 
-    <a href="Contact.html" class="bay-arrow left-arrow">
-        ❮
-    </a>
-    <a href="AboutMe.html" class="bay-arrow right-arrow">
-        ❯
-    </a>
+<a href="Contact.html" class="nav-arrow arrow-left">◀</a>
+<a href="AboutMe.html" class="nav-arrow arrow-right">▶</a>
 
-<div class="garage-container">
+<div class="garage-page">
+<img
+src="images/RB21.png"
+alt="RB21 Bay"
+class="garage-background">
+<h1 class="page-title">RB21 Bay</h1>
 
-    <img
-        src="images/RB21.png"
-        alt="RB21 Bay"
-        class="garage-image">
-
-    <!-- hotspots here -->
-
+<!-- hemlet modal (directroy)-->
+<div
+class="hotspot"
+data-modal-target="directoryModal"
+style="
+top:40%;
+left:69%;
+width:150px;
+height:150px;
+">
 </div>
-</div>
-    <!-- TV -->
-
-    <div
-        class="hotspot tv-hotspot"
-        data-modal-target="overviewModal">
-
-        <div class="hover-card">
-            <h3>Garage Overview</h3>
-            <p>
-                View all bays and learn how the portfolio is organized.
-            </p>
-        </div>
-    </div>
-
-    <!-- Helmet -->
-
-    <div
-        class="hotspot helmet-hotspot"
-        data-modal-target="welcomeModal">
-
-        <div class="hover-card">
-            <h3>Welcome</h3>
-            <p>
-                hi my name is Max Verstappen, welcome to Karanveer's garage!
-            </p>
-        </div>
-    </div>
-
-    <!-- Tires -->
-
-    <div
-        class="hotspot tire-hotspot"
-        data-modal-target="settingsModal">
-
-        <div class="hover-card">
-            <h3>Settings</h3>
-            <p>
-                Toggle light mode and dark mode.
-            </p>
-        </div>
-    </div>
+<div
+class="hover-card"
+style="
+top:28%;
+left:58%;
+">
+<h3>Garage Directory</h3>
+<p> View every bay and jump anywhere in the garage. </p>
 </div>
 
-<!-- KEEP ALL YOUR EXISTING MODALS BELOW THIS POINT -->
+<!-- max funko -->
+<div
+class="hotspot"
+data-modal-target="welcomeModal"
+style="
+top:25%;
+left:87.5%;
+width:100px;
+height:100px;
+">
+</div>
+<div
+class="hover-card"
+style="
+top:42%;
+left:44%;
+">
+<h3>Welcome</h3>
+</p>
+</div>
 
+<!-- pirelli tires -->
+<div
+class="hotspot"
+data-modal-target="settingsModal"
+style="
+top:52.5%;
+left:5%;
+width:250px;
+height:280px;
+">
+</div>
+<div
+class="hover-card"
+style="
+top:44%;
+left:20%;
+">
+<h3>Settings</h3>
+<p>
+Switch between light mode and dark mode.
+</p>
+</div>
+</div>
+
+<!-- welcome modal screen -->
+<div class="modal" id="welcomeModal">
+<div class="modal-content">
+<button class="close-modal">&times;</button>
+<h2>Welcome</h2>
+<p>Hi welcome to Karanveer's portfolio. Explore the garage to learn more about him!</p>
+</div>
+
+<!-- settings modal screen-->
+
+<div class="modal" id="settingsModal">
+<div class="modal-content">
+<button class="close-modal">&times;</button>
+<h2>Settings</h2>
+<p>
+Toggle between light mode and dark mode.
+</p>
+<br>
+<button onclick="toggleTheme()">
+Toggle Theme
+</button>
+</div>
+</div>
+
+<!-- directory -->
+<div class="modal" id="directoryModal">
+<div class="modal-content">
+<button class="close-modal">&times;</button>
+<h2>Garage Directory</h2>
+<ul>
+<li><a href="Index.html">RB21 Bay</a></li>
+<li><a href="AboutMe.html">Ecto-1 Bay</a></li>
+<li><a href="Skills.html">Mystery Machine Bay</a></li>
+<li><a href="Projects.html">DeLorean Bay</a></li>
+<li><a href="Contact.html">SF2002 Bay</a></li>
+</ul>
+</div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

@@ -3,231 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Karanveer's Garage</title>
-
+    <title>SF2002 Bay | Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- TOP DIRECTORY -->
-
-<nav class="top-directory">
-
-    <a href="index.html">Home</a>
-    <a href="AboutMe.html">About Me</a>
-    <a href="Skills.html">Skills</a>
-    <a href="Projects.html">Projects</a>
-    <a href="Contact.html" class="active-bay">Contact</a>
-
+<nav class="directory-bar">
+    <a href="index.html">RB21</a>
+    <a href="AboutMe.html">Ecto-1</a>
+    <a href="Skills.html">Mystery Machine</a>
+    <a href="Projects.html">DeLorean</a>
+    <a href="Contact.html">SF2002</a>
 </nav>
 
-<div class="garage-container">
-
-    <h1 class="page-title">SF2002 Bay</h1>
-
-    <!-- SIDE ARROWS -->
-
-    <a href="Projects.html" class="bay-arrow left-arrow">
-        ◀
-    </a>
-
-    <a href="index.html" class="bay-arrow right-arrow">
-        ▶
-    </a>
-
-    <!-- EMAIL -->
-
-    <div class="object-wrapper"
-         style="top:36.5%; left:10%;">
-
-        <img
-            src="images/walkie.png"
-            alt="Email"
-            width="130">
-
-        <div class="hotspot"
-             data-modal-target="gmailModal">
-
-            <div class="hover-card">
-
-                <h3>Email</h3>
-
-                <p>
-                    Direct communication
-                    for networking,
-                    opportunities,
-                    and questions.
-                </p>
-
-                <span>Click to view</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- LINKEDIN -->
-
-    <div class="object-wrapper"
-         style="top:45%; left:70%;">
-
-        <img
-            src="images/laptop.png"
-            alt="LinkedIn"
-            width="175">
-
-        <div class="hotspot"
-             data-modal-target="linkedinModal">
-
-            <div class="hover-card">
-
-                <h3>LinkedIn</h3>
-
-                <p>
-                    Connect professionally
-                    and view experience,
-                    activities, and updates.
-                </p>
-
-                <span>Click to view</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- GITHUB -->
-
-    <div class="object-wrapper"
-         style="top:30%; left:35%;">
-
-        <img
-            src="images/telemetry.png"
-            alt="GitHub"
-            width="275">
-
-        <div class="hotspot"
-             data-modal-target="githubModal">
-
-            <div class="hover-card">
-
-                <h3>GitHub</h3>
-
-                <p>
-                    Browse projects,
-                    repositories,
-                    and source code.
-                </p>
-
-                <span>Click to view</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- CAR -->
+<a href="Projects.html" class="nav-arrow arrow-left">◀</a>
+<a href="index.html" class="nav-arrow arrow-right">▶</a>
+<div class="garage-page">
 
     <img
         src="images/SF2002.png"
-        alt="SF2002"
-        class="sf2002">
+        alt="SF2002 Bay"
+        class="garage-background">
 
+    <h1 class="page-title">SF2002 Bay</h1>
+
+<!-- walkietalkie -->
+<div
+class="hotspot"
+data-modal-target="gmailModal"
+style="
+top:40%;
+left:23.5%;
+width:55px;
+height:150px;
+">
+</div>
+<div
+class="hover-card"
+style="
+top:22%;
+left:17%;
+">
+<h3>Email</h3>
+<p>
+Contact me directly through email.
+</p>
 </div>
 
-<!-- EMAIL MODAL -->
+<!-- telemtery -->
+<div
+class="hotspot"
+data-modal-target="githubModal"
+style="
+top:27.5%;
+left:35%;
+width:375px;
+height:220px;
+">
+</div>
+<div
+class="hover-card"
+style="
+top:15%;
+left:52%;
+">
+<h3>GitHub</h3>
+<p> View my repositories, coding projects, and portfolio source code. </p></div>
+<!-- laptop -->
+<div
+class="hotspot"
+data-modal-target="linkedinModal"
+style="
+top:37.5%;
+left:68%;
+width:250px;
+height:180px;
+">
+</div>
+<div
+class="hover-card"
+style="
+top:28%;
+left:40%;
+">
+<h3>LinkedIn</h3>
+<p>Connect with me professionally and view my experience.</p>
+</div>
+
+<!-- schumi poster -->
+<a
+href="https://www.formula1.com/en/drivers/hall-of-fame/Michael_Schumacher.html"
+target="_blank"
+class="hotspot"
+style="
+top:30%;
+left:8%;
+width:150px;
+height:225px;
+"> </a>
+<div
+class="hover-card"
+style="
+top:10%;
+left:45%; ">
+</div>
+</div>
+<!-- gmail -->
 
 <div class="modal" id="gmailModal">
-
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>Email</h2>
-
-        <p>
-            Reach out through email.
-        </p>
-
-        <p class="contact-link-row">
-
-            <a href="mailto:karan.singh.610229@gmail.com"
-               class="contact-link">
-
-                karan.singh.610229@gmail.com
-
-            </a>
-
-        </p>
-
-    </div>
-
+<div class="modal-content">
+<button class="close-modal">&times;</button>
+<h2>Email</h2>
+<p> Reach out directly through email. </p>
+<br> <a href="mailto:karan.singh.610229@gmail.com"> 
+    karan.singh.610229@gmail.com </a>
+</div>
 </div>
 
-<!-- LINKEDIN MODAL -->
-
+<!-- linkedin -->
 <div class="modal" id="linkedinModal">
-
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>LinkedIn</h2>
-
-        <p>
-            Connect with me on LinkedIn.
-        </p>
-
-        <p class="contact-link-row">
-
-            <a href="https://www.linkedin.com/in/karan-singh-6306363aa"
-               target="_blank"
-               class="contact-link">
-
-                Visit LinkedIn
-
-            </a>
-
-        </p>
-
-    </div>
-
+<div class="modal-content">
+<button class="close-modal">&times;</button>
+<h2>LinkedIn</h2>
+<p> Connect with me professionally. </p>
+<br>
+<a
+href="https://www.linkedin.com/in/karan-singh-6306363aa"
+target="_blank">
+Visit LinkedIn
+</a>
+</div>
 </div>
 
-<!-- GITHUB MODAL -->
-
+<!-- github -->
 <div class="modal" id="githubModal">
-
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>GitHub</h2>
-
-        <p>
-            View my projects and code.
-        </p>
-
-        <p class="contact-link-row">
-
-            <a href="https://github.com/singhcode222"
-               target="_blank"
-               class="contact-link">
-
-                Visit GitHub
-
-            </a>
-
-        </p>
-
-    </div>
-
+<div class="modal-content">
+<button class="close-modal">&times;</button>
+<h2>GitHub</h2>
+<p> View my coding projects and repositories. </p>
+<br><a
+href="https://github.com/singhcode222"
+target="_blank">
+Visit GitHub
+</a> </div>
 </div>
-
 <script src="script.js"></script>
-
 </body>
 </html>
